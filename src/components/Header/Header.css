@@ -1,0 +1,26 @@
+header {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #C69749;
+}
+header button {
+    font-family: "Roboto";
+    padding: 1.5rem 1.5rem;
+    background-color: #C69749;
+    border-radius: 10px;
+    color: #1e3050;
+    border: none;
+    transition: 0.5s;
+}
+header button:hover {
+    transform: scale(1.1);
+}

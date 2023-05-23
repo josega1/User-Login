@@ -1,0 +1,104 @@
+* {
+    color: #1e3050;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+}
+.loader p {
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 3rem;
+}
+.user_list {
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+    list-style: none;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 380px));
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 11vh;
+}
+.user_card {
+    position: relative;
+    padding: 1.2rem;
+    height: 250px;
+    font-family: "Roboto";
+    background-color: #C69749;
+    border-radius: 5px;
+    border: solid 1px gray;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.25s;
+}
+.user_card:hover {
+    transform: scale(1.025);
+}
+.user_card__full_name {
+    margin: 0;
+    align-self: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.user_card__data {
+    align-self: flex-start;
+}
+.user_card__buttons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.delete_btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.edit_btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@media (max-width: 500px) and (max-height: 800px) {
+    .loader {
+      margin-bottom: 61vh;
+    }
+    .user_list {
+      margin-bottom: 27vh;
+    }
+}
+@media (max-width: 500px){
+    .user_card {
+        justify-self: center;
+        width: 80%;
+    }
+}

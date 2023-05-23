@@ -1,0 +1,11 @@
+.modal {
+    position: absolute;
+    inset: 0;
+    /* inset es igual a hacer top, bottom left y right  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
